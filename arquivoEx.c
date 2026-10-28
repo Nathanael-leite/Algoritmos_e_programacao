@@ -19,12 +19,21 @@ int main(void){
     int hp = 100; 
     int *ptr_hr = &hp; //poteiro que aponta para o endereço de hp 
 
-    printf(" Valor de hp = %d \n", *ptr_hr);
+    printf(" Valor de hp = %d \n", hp);
+    printf(" Valor de *prt = %d \n", *ptr_hr);
 
     //atribuição
-    *ptr_hr = 75;
+    hp = 75;
 
-    printf(" Valor de hp = %d \n", *ptr_hr);
+    printf(" Valor de hp = %d \n", hp);
+    printf(" Valor de *prt = %d \n", *ptr_hr);
+
+    *ptr_hr = *ptr_hr - 20;
+  
+    printf(" Valor de hp = %d \n", hp);
+    printf(" Valor de *prt = %d \n", *ptr_hr);
+
+    //ambas apotam para a primeira área de memória 
 
 
     return 0;
